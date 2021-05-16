@@ -13,6 +13,10 @@
 		1C96BB7326407B9500AD1676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C96BB7226407B9500AD1676 /* Assets.xcassets */; };
 		1C96BB7626407B9500AD1676 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C96BB7526407B9500AD1676 /* Preview Assets.xcassets */; };
 		1C96BB7926407B9500AD1676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C96BB7726407B9500AD1676 /* LaunchScreen.storyboard */; };
+		1C96BB8226407F8000AD1676 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C96BB8126407F8000AD1676 /* NetworkManager.swift */; };
+		1C96BB842640807A00AD1676 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C96BB832640807A00AD1676 /* PostData.swift */; };
+		1C96BB882640A08000AD1676 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C96BB872640A08000AD1676 /* DetailView.swift */; };
+		1C96BB8A2640A45700AD1676 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C96BB892640A45700AD1676 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,11 @@
 		1C96BB7526407B9500AD1676 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C96BB7826407B9500AD1676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C96BB7A26407B9500AD1676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C96BB8126407F8000AD1676 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1C96BB832640807A00AD1676 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		1C96BB872640A08000AD1676 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1C96BB892640A45700AD1676 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		1C96BB8B2640A5E300AD1676 /* hacker-news.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "hacker-news.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +65,11 @@
 		1C96BB6B26407B8C00AD1676 /* hacker-news */ = {
 			isa = PBXGroup;
 			children = (
-				1C96BB6C26407B8C00AD1676 /* AppDelegate.swift */,
-				1C96BB6E26407B8C00AD1676 /* SceneDelegate.swift */,
-				1C96BB7026407B8C00AD1676 /* ContentView.swift */,
+				1C96BB8B2640A5E300AD1676 /* hacker-news.entitlements */,
+				1C96BB8026407F5F00AD1676 /* Models */,
+				1C96BB8526409FB800AD1676 /* Views */,
+				1C96BB8626409FDF00AD1676 /* Others */,
 				1C96BB7226407B9500AD1676 /* Assets.xcassets */,
-				1C96BB7726407B9500AD1676 /* LaunchScreen.storyboard */,
 				1C96BB7A26407B9500AD1676 /* Info.plist */,
 				1C96BB7426407B9500AD1676 /* Preview Content */,
 			);
@@ -73,6 +82,35 @@
 				1C96BB7526407B9500AD1676 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1C96BB8026407F5F00AD1676 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C96BB8126407F8000AD1676 /* NetworkManager.swift */,
+				1C96BB832640807A00AD1676 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C96BB8526409FB800AD1676 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C96BB7726407B9500AD1676 /* LaunchScreen.storyboard */,
+				1C96BB7026407B8C00AD1676 /* ContentView.swift */,
+				1C96BB872640A08000AD1676 /* DetailView.swift */,
+				1C96BB892640A45700AD1676 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C96BB8626409FDF00AD1676 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				1C96BB6C26407B8C00AD1676 /* AppDelegate.swift */,
+				1C96BB6E26407B8C00AD1676 /* SceneDelegate.swift */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C96BB842640807A00AD1676 /* PostData.swift in Sources */,
+				1C96BB882640A08000AD1676 /* DetailView.swift in Sources */,
+				1C96BB8226407F8000AD1676 /* NetworkManager.swift in Sources */,
 				1C96BB6D26407B8C00AD1676 /* AppDelegate.swift in Sources */,
 				1C96BB6F26407B8C00AD1676 /* SceneDelegate.swift in Sources */,
 				1C96BB7126407B8C00AD1676 /* ContentView.swift in Sources */,
+				1C96BB8A2640A45700AD1676 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "hacker-news/hacker-news.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"hacker-news/Preview Content\"";
 				DEVELOPMENT_TEAM = 9YBQ5S77GM;
@@ -297,6 +340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshcourtney.hacker-news";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "hacker-news/hacker-news.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"hacker-news/Preview Content\"";
 				DEVELOPMENT_TEAM = 9YBQ5S77GM;
@@ -318,6 +363,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joshcourtney.hacker-news";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
